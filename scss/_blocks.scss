@@ -1,12 +1,10 @@
 .blocks {
-
-    padding: 3rem 0;
-
-    h2 {
+    &__title {
+        padding: 3rem 0;
         color: $color-01;
     }
 
-    ul {
+    &__list {
         list-style-type: none;
         font-size: $font-small;
         display: flex;
@@ -16,20 +14,20 @@
         width: 100%;
     }
 
-    li {
+    &__item {
         color: $color-02;
         display: block;
         margin: $space-default auto;
         width: 30%;
-        
-        .img-container {
+
+        &-img-container {
             display: block;
             height: 200px;
             overflow: hidden;
             width: 100%;
         }
 
-        a {
+        &-link {
             background-color: $color-01;
             border-radius: 5px;
             color: white;
@@ -41,5 +39,4 @@
             text-decoration: none;
         }
     }
-
 }
